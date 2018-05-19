@@ -1,0 +1,12 @@
+#header-top {
+    background-image: url("../images/johannes-hofmann-536086-unsplash.jpg") !important; 
+    background-position: top;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: white;
+}
+.jumbotron {
+    background-color: transparent !important;
+}
