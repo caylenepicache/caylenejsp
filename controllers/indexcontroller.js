@@ -10,6 +10,17 @@ router.get('/', function(req, res) {
   res.render('home')
 })
 
+router.get('/aboutme', function(req, res) {
+  res.render('aboutme')
+})
+
+router.get('/portfolio', function(req, res) {
+  res.render('portfolio')
+})
+
+router.get('/contactme', function(req, res) {
+  res.render('contactme')
+})
 
 // Export routes for server.js to use.
 module.exports = router;
