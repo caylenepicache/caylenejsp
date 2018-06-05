@@ -4,10 +4,73 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size:cover;
-    padding-top: 0%;
-    padding-bottom: 0%;
+    padding-top: 1%;
+    padding-bottom: 10%;
     color: white;
+}
+
+a {
+    text-shadow: 2px 2px black;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: white !important;
+}
+
+a:hover {
+    background-color: black;
+    font-weight: strong;
+    text-decoration: overline;
 }
 .jumbotron {
     background-color: transparent !important;
+}
+.jumbotron-fluid {
+    padding-top: 15% !important;
+}
+
+#jumbo-name, #jumbo-tag {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+#jumbo-name {
+    font-size: 100px;
+    text-shadow: 2px 2px black
+}
+
+#jumbo-tag {
+    font-size: 60px;
+    text-shadow: 2px 2px black;
+}
+
+/*satellite*/
+
+#white-overlay {
+    background-color: white;
+}
+
+#sat-jumbo {
+    padding-top: 0% !important;
+    padding-bottom: 0% !important;
+}
+
+#sat-header-top {
+    background-image: url("../images/johannes-hofmann-536086-unsplash.jpg") !important; 
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+
+}
+#sat-name, #sat-tag {
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    text-shadow: 2px 2px black;
+}
+
+#sat-tag {
+    font-size: 35px;
 }
