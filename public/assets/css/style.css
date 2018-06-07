@@ -47,6 +47,8 @@ a:hover {
 
 #white-overlay {
     background-color: white;
+    margin-top: 2%;
+    font-size: 22px;
 }
 
 #sat-jumbo {
@@ -74,3 +76,22 @@ a:hover {
 #sat-tag {
     font-size: 35px;
 }
+
+/*ABOUT ME*/
+#aboutme-img{
+    width: 50%;
+    float:left;
+    margin:10px;
+}
+
+#aboutme-img-right{
+    width: 50%;
+    float:right;
+    margin:10px
+}
+
+/*PORTFOLIO*/
+.card {
+    float: left;
+}
+
