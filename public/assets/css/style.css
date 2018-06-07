@@ -95,3 +95,11 @@ a:hover {
     float: left;
 }
 
+.card-img-top {
+    width: 252px !important;
+}
+
+a#port-link {
+    color: grey !important;
+    text-shadow: none;
+}
