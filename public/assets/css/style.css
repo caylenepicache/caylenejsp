@@ -96,11 +96,19 @@ a:hover {
 }
 
 
-
 a#port-link {
     color: grey !important;
     text-shadow: none;
 }
+
+
+/*contactme*/
+
+#contact-me-head {
+    font-size: 40px;
+    text-align: center;
+}
+
 
 @media (min-width: 34em) {
     .card-columns {
