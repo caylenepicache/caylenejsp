@@ -6,7 +6,8 @@ var PORT = process.env.PORT || 8080;
 var app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
-app.use(express.static("public"));
+//app.use(express.static("public"));
+app.use('/public', express.static(__dirname + "/public"));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -20,6 +21,8 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 app.set('views', './views')
+
+
 
 // Import routes and give the server access to them.
 var routes = require("./controllers/indexcontroller.js");
