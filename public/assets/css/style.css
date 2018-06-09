@@ -99,6 +99,7 @@ a:hover {
 a#port-link {
     color: grey !important;
     text-shadow: none;
+    text-align: center;
 }
 
 
