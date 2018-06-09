@@ -30,13 +30,13 @@ function addUser(event) {
             console.log("response" + data);
             console.log("firstnameajax: " + data.firstName)
 
-            // Clear the form inputs
-            $('#firstNameInput').val('');
-            $('#lastNameInput').val('');
-            $('#emailInput').val('');
-            $('#textInput').val('');
-
         });
+
+        // Clear the form inputs
+        $('#firstNameInput').val('');
+        $('#lastNameInput').val('');
+        $('#emailInput').val('');
+        $('#textInput').val('');
     }
     return false;
 
