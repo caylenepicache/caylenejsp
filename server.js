@@ -47,6 +47,42 @@ db.on("error", function(error) {
   console.log("Database Error:", error);
 });
 
+/*MONGO*/
+
+app.post('/addvisitor', function(req, res) {
+
+  // Set our internal DB variable
+ // var db = req.db;
+ // console.log("db"+ req.db)
+  console.log("req.body:" + req.body);
+  // Get our form values. These rely on the "name" attributes
+  var vName = req.body.firstName;
+  console.log("name:" + vName);
+  var vLName = req.body.lastName;
+  var vEmail = req.body.email;
+  var vMessage = req.body.message;
+
+  // Set our collection
+ // var collection = db.visitors
+
+  // Submit to the DB
+  db.visitors.insert({
+      "firstName" : vName,
+      "LastName" : vLName,
+      "email" : vEmail,
+      "message": vMessage
+  }, function (err, doc) {
+      if (err) {
+          // If it failed, return error
+          res.send("There was a problem adding the information to the database.");
+      }
+      else {
+          // And forward to success page
+          res.redirect("contactme");
+      }
+  });
+});
+
 
 // Import routes and give the server access to them.
 var routes = require("./controllers/indexcontroller.js");
