@@ -5,6 +5,9 @@ var PORT = process.env.PORT || 8080;
 
 var app = express();
 
+var logger = require("morgan");
+var mongojs = require("mongojs");
+
 // Serve static content for the app from the "public" directory in the application directory.
 //app.use(express.static("public"));
 app.use('/public', express.static(__dirname + "/public"));
@@ -22,6 +25,27 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 app.set('views', './views')
 
+
+/*mongo*/
+app.use(logger("dev"));
+app.use(
+  bodyParser.urlencoded({
+    extended: false
+  })
+);
+
+// Static file support with public folder
+app.use(express.static("public"));
+
+// Mongojs configuration
+var databaseUrl = "visitors";
+var collections = ["visitor"];
+
+// Hook our mongojs config to the db var
+var db = mongojs(databaseUrl, collections);
+db.on("error", function(error) {
+  console.log("Database Error:", error);
+});
 
 
 // Import routes and give the server access to them.
