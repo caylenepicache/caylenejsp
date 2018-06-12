@@ -38,14 +38,15 @@ app.use(
 app.use(express.static("public"));
 
 // Mongojs configuration
-var databaseUrl = "visitors";
-var collections = ["visitor"];
+var databaseUrl = "mongodb://heroku_gbgnxfm4:m4g5jvule8jt8nsh50ckau5srd@ds153890.mlab.com:53890/heroku_gbgnxfm4";
+var collections = ["heroku_gbgnxfm4"];
 
 // Hook our mongojs config to the db var
 var db = mongojs(databaseUrl, collections);
 db.on("error", function(error) {
   console.log("Database Error:", error);
 });
+
 
 /*MONGO*/
 
