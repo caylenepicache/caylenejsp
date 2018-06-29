@@ -43,12 +43,74 @@ a:hover {
     text-shadow: 2px 2px black;
 }
 
+#fixed-background {
+    background-image: url("../images/johannes-hofmann-536086-unsplash.jpg") !important; 
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100% !important;
+    height: 500px !important;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+}
+
+#profileimg {
+    width: 400px;
+    word-wrap: break-word;
+}
+
+#portImg {
+    width: 400px;
+    word-wrap: break-word;
+    float: right;
+
+}
+
+#whiteHeaders {
+    font-size: 100px !important;
+    position: relative;
+    text-align: center;
+    color: #003300 !important;
+}
+
+#whiteHeaders:hover {
+    background-color: #003300 !important;
+    text-decoration: none !important;
+    color: white !important;
+}
+
+#plantHeaders {
+    font-size: 100px !important;
+    position: relative;
+    text-align: center;
+}
+
+#plantHeaders:hover {
+    background-color: #ffffff !important;
+    text-decoration: none !important;
+    color: #003300 !important;
+}
+
+#linkBox {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+#linkBoxLeft {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
 /*satellite*/
 
 #white-overlay {
     background-color: white;
     margin-top: 2%;
     font-size: 22px;
+    padding-bottom: 30px;
 }
 
 #sat-jumbo {
