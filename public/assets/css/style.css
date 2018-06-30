@@ -168,6 +168,19 @@ a#port-link {
     text-align: center;
 }
 
+#resumeHeaders {
+    font-size: 80px !important;
+    position: relative;
+    text-align: center;
+    color: #003300 !important;
+}
+
+#resumeHeaders:hover {
+    background-color: #003300 !important;
+    text-decoration: none !important;
+    color: white !important;
+}
+
 
 /*contactme*/
 
